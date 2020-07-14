@@ -1,6 +1,6 @@
 # # Homwork 03 JavaScript: Password Generator
 
-The following link to get to the application:
+Click on the following link to get to the application:
 * ['Password-Generator GitHub IO'](https://kevkouadio.github.io/hw3-password-generator/.)
 
 The following images demonstrates the application functionality:
