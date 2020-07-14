@@ -28,10 +28,10 @@ function generatePassword() {
         passLength = parseInt(prompt("You must choose between 8 and 128"));
     }
     else {
-        confirmNumber = confirm("Would you like your password to contain numbers?");
-        confirmCharacters = confirm("Would you like your password to contain special characters?");
-        confirmLowercases = confirm("Would you like your password to contain lower cases?");
-        confirmUppercases = confirm("Would you like your password to contain uppercases?");
+        confirmNumber = confirm("Would you like your password to contain numbers? Click OK to confirm!");
+        confirmCharacters = confirm("Would you like your password to contain special characters? Click OK to confirm!");
+        confirmLowercases = confirm("Would you like your password to contain lower cases? Click OK to confirm!");
+        confirmUppercases = confirm("Would you like your password to contain uppercases? Click OK to confirm!");
     };
     
     if (!confirmNumber && !confirmCharacters && !confirmLowercases && !confirmUppercases){
