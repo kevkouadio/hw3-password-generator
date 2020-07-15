@@ -31,7 +31,7 @@ function generatePassword() {
         confirmNumber = confirm("Would you like your password to contain numbers? Click OK to confirm!");
         confirmCharacters = confirm("Would you like your password to contain special characters? Click OK to confirm!");
         confirmLowercases = confirm("Would you like your password to contain lower cases? Click OK to confirm!");
-        confirmUppercases = confirm("Would you like your password to contain uppercases? Click OK to confirm!");
+        confirmUppercases = confirm("Would you like your password to contain upper cases? Click OK to confirm!");
     };
     
     if (!confirmNumber && !confirmCharacters && !confirmLowercases && !confirmUppercases){
@@ -105,3 +105,11 @@ function UserInput(p) {
     document.getElementById("password").textContent = p;
 }
 
+// Copy Password to Clipboard
+function copyText() {
+    var copyText = document.getElementById("password");
+    copyText.select();
+    copyText.setSelectionRange(0, 99999)
+    document.execCommand("copy");
+    alert("Password copied to clipboard!");
+  }
